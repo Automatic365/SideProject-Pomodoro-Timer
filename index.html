@@ -8,7 +8,10 @@
 </head>
 <body>
     <div class="container">
+        <button id="toggle-mode">��</button>
+        <button id="add-time">+5 Min</button>
         <h1>Pomodoro Timer</h1>
+        <div id="goal-display"></div>
         <div class="timer">
             <span id="minutes">25</span>:<span id="seconds">00</span>
         </div>
@@ -17,11 +20,17 @@
             <button id="pause">Pause</button>
             <button id="reset">Reset</button>
         </div>
-        <div class="mode">
-            <button id="work" class="active">Work</button>
-            <button id="break">Break</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="goal-modal" class="modal">
+        <div class="modal-content">
+            <h2>What would you like to accomplish?</h2>
+            <input type="text" id="goal-input" placeholder="Enter your goal for this session">
+            <button id="submit-goal">Start Session</button>
         </div>
     </div>
+
     <audio id="buzzer" src="https://www.soundjay.com/misc/sounds/basketball-buzzer-1.mp3"></audio>
     <script src="script.js"></script>
 </body>

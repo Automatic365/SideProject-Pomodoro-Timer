@@ -11,6 +11,7 @@ body {
 }
 
 .container {
+    position: relative;
     text-align: center;
     background-color: white;
     padding: 2rem;
@@ -72,4 +73,91 @@ body {
 
 h1 {
     color: #006BB6; /* Knicks Blue */
+}
+
+#toggle-mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#toggle-mode:hover {
+    transform: scale(1.2);
+}
+
+/* Add these new styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#goal-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submit-goal {
+    background-color: #F58426;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-goal:hover {
+    background-color: #e67215;
+}
+
+#goal-display {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    font-style: italic;
+    color: #006BB6;
+}
+
+#add-time {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #F58426; /* Knicks Orange */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+#add-time:hover {
+    background-color: #e67215; /* Darker Orange */
+    transform: scale(1.05);
 } 
