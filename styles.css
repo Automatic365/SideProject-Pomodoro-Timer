@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/digital-7-mono');
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -5,7 +7,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #006BB6; /* Knicks Blue */
 }
 
 .container {
@@ -13,12 +15,19 @@ body {
     background-color: white;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid #F58426; /* Knicks Orange border */
 }
 
 .timer {
-    font-size: 4rem;
+    font-family: 'Digital-7 Mono', 'Digital-7', monospace;
+    font-size: 5rem; /* Made slightly larger */
     margin: 2rem 0;
+    color: #006BB6; /* Knicks Blue */
+    text-shadow: 0 0 5px rgba(0, 107, 182, 0.3); /* Subtle glow effect */
+    background: rgba(240, 240, 240, 0.3); /* Light background */
+    padding: 0.5rem;
+    border-radius: 5px;
 }
 
 .controls button, .mode button {
@@ -28,12 +37,13 @@ body {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50;
+    background-color: #F58426; /* Knicks Orange */
     color: white;
+    transition: all 0.3s ease;
 }
 
 .controls button:hover, .mode button:hover {
-    background-color: #45a049;
+    background-color: #e67215; /* Darker Orange */
 }
 
 .mode button {
@@ -41,15 +51,15 @@ body {
 }
 
 .mode button.active {
-    background-color: #4CAF50;
+    background-color: #F58426; /* Knicks Orange */
 }
 
 #pause {
-    background-color: #f44336;
+    background-color: #006BB6; /* Knicks Blue */
 }
 
 #pause:hover {
-    background-color: #da190b;
+    background-color: #005a9e; /* Darker Blue */
 }
 
 #reset {
@@ -58,4 +68,8 @@ body {
 
 #reset:hover {
     background-color: #666666;
+}
+
+h1 {
+    color: #006BB6; /* Knicks Blue */
 } 
