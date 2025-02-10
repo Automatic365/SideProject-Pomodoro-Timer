@@ -25,7 +25,11 @@ function startTimer() {
             if (timeLeft === 0) {
                 clearInterval(timerId);
                 timerId = null;
-                alert(isWorkMode ? 'Work session completed! Take a break!' : 'Break is over! Back to work!');
+                const buzzer = document.getElementById('buzzer');
+                buzzer.play();
+                setTimeout(() => {
+                    alert(isWorkMode ? 'Work session completed! Take a break!' : 'Break is over! Back to work!');
+                }, 500); // Wait for buzzer to start before showing alert
                 resetTimer();
             }
         }, 1000);

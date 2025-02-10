@@ -23,8 +23,8 @@ body {
     font-family: 'Digital-7 Mono', 'Digital-7', monospace;
     font-size: 5rem; /* Made slightly larger */
     margin: 2rem 0;
-    color: #006BB6; /* Knicks Blue */
-    text-shadow: 0 0 5px rgba(0, 107, 182, 0.3); /* Subtle glow effect */
+    color: #ff0000; /* Changed to red */
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.3); /* Changed glow to red */
     background: rgba(240, 240, 240, 0.3); /* Light background */
     padding: 0.5rem;
     border-radius: 5px;
